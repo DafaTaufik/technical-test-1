@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         }
         findViewById<Button>(R.id.buttonLogin).setOnClickListener {
             val intent = Intent(this, ContactListActivity::class.java)
-            startActivity(intent) // Memulai ContactListActivity
+            startActivity(intent)
         }
     }
 }

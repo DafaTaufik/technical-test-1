@@ -1,0 +1,785 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactListActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ContactListLayout">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D00B0B"
+            android:orientation="horizontal"
+            android:paddingVertical="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:background="@null"
+                android:src="@drawable/ic_arrow" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Contact List"
+                android:textColor="@color/white"
+                android:textSize="22dp"
+                tools:layout_conversion_absoluteHeight="0dp"
+                tools:layout_conversion_absoluteWidth="0dp" />
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/FirstList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+
+            <ImageView
+                android:id="@+id/imageProfile1"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="18dp"
+                android:src="@drawable/ic_person"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/Cs1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="CS Telkomsel"
+                android:textSize="13sp"
+                app:layout_constraintStart_toEndOf="@+id/imageProfile1"
+                app:layout_constraintTop_toTopOf="@+id/imageProfile1" />
+
+            <TextView
+                android:id="@+id/Csnum1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="081293551227"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageProfile1"
+                app:layout_constraintStart_toEndOf="@+id/imageProfile1" />
+
+            <ImageView
+                android:id="@+id/Edit1"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/ic_edit"
+                app:layout_constraintBottom_toBottomOf="@+id/Delete1"
+                app:layout_constraintEnd_toStartOf="@+id/Delete1"
+                app:layout_constraintTop_toTopOf="@+id/Delete1" />
+
+            <ImageView
+                android:id="@+id/Delete1"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/ic_delete"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/Line1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="15dp"
+                android:background="#808080"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageProfile1" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/FirstList2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/FirstList">
+
+            <ImageView
+                android:id="@+id/imageProfile2"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="18dp"
+                android:src="@drawable/ic_person"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/Cs2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="CS Telkomsel"
+                android:textSize="13sp"
+                app:layout_constraintStart_toEndOf="@+id/imageProfile2"
+                app:layout_constraintTop_toTopOf="@+id/imageProfile2" />
+
+            <TextView
+                android:id="@+id/Csnum2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="081293551227"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageProfile2"
+                app:layout_constraintStart_toEndOf="@+id/imageProfile2" />
+
+            <ImageView
+                android:id="@+id/Edit2"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/ic_edit"
+                app:layout_constraintBottom_toBottomOf="@+id/Delete2"
+                app:layout_constraintEnd_toStartOf="@+id/Delete2"
+                app:layout_constraintTop_toTopOf="@+id/Delete2" />
+
+            <ImageView
+                android:id="@+id/Delete2"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/ic_delete"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/Line2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="15dp"
+                android:background="#808080"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageProfile2" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/FirstList3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/FirstList2">
+
+            <ImageView
+                android:id="@+id/imageProfile3"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="18dp"
+                android:src="@drawable/ic_person"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/Cs3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="CS Telkomsel"
+                android:textSize="13sp"
+                app:layout_constraintStart_toEndOf="@+id/imageProfile3"
+                app:layout_constraintTop_toTopOf="@+id/imageProfile3" />
+
+            <TextView
+                android:id="@+id/Csnum3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="081293551227"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageProfile3"
+                app:layout_constraintStart_toEndOf="@+id/imageProfile3" />
+
+            <ImageView
+                android:id="@+id/Edit3"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/ic_edit"
+                app:layout_constraintBottom_toBottomOf="@+id/Delete3"
+                app:layout_constraintEnd_toStartOf="@+id/Delete3"
+                app:layout_constraintTop_toTopOf="@+id/Delete3" />
+
+            <ImageView
+                android:id="@+id/Delete3"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/ic_delete"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/Line3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="15dp"
+                android:background="#808080"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageProfile3" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/FirstList4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/FirstList3">
+
+            <ImageView
+                android:id="@+id/imageProfile4"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="18dp"
+                android:src="@drawable/ic_person"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/Cs4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="CS Telkomsel"
+                android:textSize="13sp"
+                app:layout_constraintStart_toEndOf="@+id/imageProfile4"
+                app:layout_constraintTop_toTopOf="@+id/imageProfile4" />
+
+            <TextView
+                android:id="@+id/Csnum4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="081293551227"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageProfile4"
+                app:layout_constraintStart_toEndOf="@+id/imageProfile4" />
+
+            <ImageView
+                android:id="@+id/Edit4"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/ic_edit"
+                app:layout_constraintBottom_toBottomOf="@+id/Delete4"
+                app:layout_constraintEnd_toStartOf="@+id/Delete4"
+                app:layout_constraintTop_toTopOf="@+id/Delete4" />
+
+            <ImageView
+                android:id="@+id/Delete4"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/ic_delete"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/Line4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="15dp"
+                android:background="#808080"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageProfile4" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/FirstList5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/FirstList4">
+
+            <ImageView
+                android:id="@+id/imageProfile5"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="18dp"
+                android:src="@drawable/ic_person"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/Cs5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="CS Telkomsel"
+                android:textSize="13sp"
+                app:layout_constraintStart_toEndOf="@+id/imageProfile5"
+                app:layout_constraintTop_toTopOf="@+id/imageProfile5" />
+
+            <TextView
+                android:id="@+id/Csnum5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="081293551227"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageProfile5"
+                app:layout_constraintStart_toEndOf="@+id/imageProfile5" />
+
+            <ImageView
+                android:id="@+id/Edit5"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/ic_edit"
+                app:layout_constraintBottom_toBottomOf="@+id/Delete5"
+                app:layout_constraintEnd_toStartOf="@+id/Delete5"
+                app:layout_constraintTop_toTopOf="@+id/Delete5" />
+
+            <ImageView
+                android:id="@+id/Delete5"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/ic_delete"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/Line5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="15dp"
+                android:background="#808080"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageProfile5" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/FirstList6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/FirstList5">
+
+            <ImageView
+                android:id="@+id/imageProfile6"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="18dp"
+                android:src="@drawable/ic_person"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/Cs6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="CS Telkomsel"
+                android:textSize="13sp"
+                app:layout_constraintStart_toEndOf="@+id/imageProfile6"
+                app:layout_constraintTop_toTopOf="@+id/imageProfile6" />
+
+            <TextView
+                android:id="@+id/Csnum6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="081293551227"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageProfile6"
+                app:layout_constraintStart_toEndOf="@+id/imageProfile6" />
+
+            <ImageView
+                android:id="@+id/Edit6"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/ic_edit"
+                app:layout_constraintBottom_toBottomOf="@+id/Delete6"
+                app:layout_constraintEnd_toStartOf="@+id/Delete6"
+                app:layout_constraintTop_toTopOf="@+id/Delete6" />
+
+            <ImageView
+                android:id="@+id/Delete6"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/ic_delete"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/Line6"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="15dp"
+                android:background="#808080"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageProfile6" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/FirstList7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/FirstList6">
+
+            <ImageView
+                android:id="@+id/imageProfile7"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="18dp"
+                android:src="@drawable/ic_person"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/Cs7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="CS Telkomsel"
+                android:textSize="13sp"
+                app:layout_constraintStart_toEndOf="@+id/imageProfile7"
+                app:layout_constraintTop_toTopOf="@+id/imageProfile7" />
+
+            <TextView
+                android:id="@+id/Csnum7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="081293551227"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageProfile7"
+                app:layout_constraintStart_toEndOf="@+id/imageProfile7" />
+
+            <ImageView
+                android:id="@+id/Edit7"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/ic_edit"
+                app:layout_constraintBottom_toBottomOf="@+id/Delete7"
+                app:layout_constraintEnd_toStartOf="@+id/Delete7"
+                app:layout_constraintTop_toTopOf="@+id/Delete7" />
+
+            <ImageView
+                android:id="@+id/Delete7"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/ic_delete"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/Line7"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="15dp"
+                android:background="#808080"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageProfile7" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/FirstList8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/FirstList7">
+
+            <ImageView
+                android:id="@+id/imageProfile8"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="18dp"
+                android:src="@drawable/ic_person"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/Cs8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="CS Telkomsel"
+                android:textSize="13sp"
+                app:layout_constraintStart_toEndOf="@+id/imageProfile8"
+                app:layout_constraintTop_toTopOf="@+id/imageProfile8" />
+
+            <TextView
+                android:id="@+id/Csnum8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="081293551227"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageProfile8"
+                app:layout_constraintStart_toEndOf="@+id/imageProfile8" />
+
+            <ImageView
+                android:id="@+id/Edit8"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/ic_edit"
+                app:layout_constraintBottom_toBottomOf="@+id/Delete8"
+                app:layout_constraintEnd_toStartOf="@+id/Delete8"
+                app:layout_constraintTop_toTopOf="@+id/Delete8" />
+
+            <ImageView
+                android:id="@+id/Delete8"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/ic_delete"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/Line8"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="15dp"
+                android:background="#808080"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageProfile8" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/FirstList9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/FirstList8">
+
+            <ImageView
+                android:id="@+id/imageProfile9"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="18dp"
+                android:src="@drawable/ic_person"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/Cs9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="CS Telkomsel"
+                android:textSize="13sp"
+                app:layout_constraintStart_toEndOf="@+id/imageProfile9"
+                app:layout_constraintTop_toTopOf="@+id/imageProfile9" />
+
+            <TextView
+                android:id="@+id/Csnum9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="081293551227"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageProfile9"
+                app:layout_constraintStart_toEndOf="@+id/imageProfile9" />
+
+            <ImageView
+                android:id="@+id/Edit9"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/ic_edit"
+                app:layout_constraintBottom_toBottomOf="@+id/Delete9"
+                app:layout_constraintEnd_toStartOf="@+id/Delete9"
+                app:layout_constraintTop_toTopOf="@+id/Delete9" />
+
+            <ImageView
+                android:id="@+id/Delete9"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/ic_delete"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/Line9"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="15dp"
+                android:background="#808080"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageProfile9" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/FirstList10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/FirstList9">
+
+            <ImageView
+                android:id="@+id/imageProfile10"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="18dp"
+                android:src="@drawable/ic_person"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/Cs10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="CS Telkomsel"
+                android:textSize="13sp"
+                app:layout_constraintStart_toEndOf="@+id/imageProfile10"
+                app:layout_constraintTop_toTopOf="@+id/imageProfile10" />
+
+            <TextView
+                android:id="@+id/Csnum10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="081293551227"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageProfile10"
+                app:layout_constraintStart_toEndOf="@+id/imageProfile10" />
+
+            <ImageView
+                android:id="@+id/Edit10"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/ic_edit"
+                app:layout_constraintBottom_toBottomOf="@+id/Delete10"
+                app:layout_constraintEnd_toStartOf="@+id/Delete10"
+                app:layout_constraintTop_toTopOf="@+id/Delete10" />
+
+            <ImageView
+                android:id="@+id/Delete10"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/ic_delete"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/Line10"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="15dp"
+                android:background="#808080"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageProfile10" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
